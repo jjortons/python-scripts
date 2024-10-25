@@ -26,7 +26,7 @@ def genr_data(n):
 def main(fayl, *, no_of_items = 100):    
     try:
         with open(fayl, 'w') as f:
-            f.write(f'code,date,shares,price\n')
+            f.write(f'code,txn_date,shares,price\n')
             for s in genr_data(no_of_items):
                 f.write(f'{s[0]},{s[1]},{s[2]},{s[3]:.2f}\n')
                 
